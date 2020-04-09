@@ -5,37 +5,70 @@
   <title>Registration form</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="css/modules.css" rel="stylesheet">
-  <link href="css/type.css" rel="stylesheet">
   <link href="css/grid.css" rel="stylesheet">
+  <link href="css/type.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 
 </head>
 <body>
 
-  <main>
+<section class="island push">
     <h1>Want to go to Mars?</h1>
+    <hr>
     <p>We're looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
 
-    <form>
-      <label for="name">Name</label>
-      <input for="name" name="firstname" required>
+    <fieldset>
+      <legend>Personal details</legend>
 
-      <label for="age">Age</label>
-      <input type="number" id="age" required>
+    <form class="grid push-0 " metthod="POST" action="https://formspree.io/tchi0007@algonquinlive.com">
 
-      <label for="email">Email</label>
-      <input id="email" name="email" required>
+      <div class="unit xs-1 s-1 m-1 l-1-2 push">
+        <label for="name">Name</label>
+        <input for="name" name="firstname" required>
+      </div>
 
-      <label for="fitness">Physical fitness</label>
-      <select id="fitness" name="fitness">
-        <option>Super-human</option>
-        <option>Fit as a fiddle</option>
-        <option>Not terribly strong</option>
-        <option>A little couch-potato-y</option>
-      </select>
+      <div class="unit xs-1 s-1 m-1 l-1-2 push">
+        <label for="age">Age</label>
+        <input type="number" id="age" required>
+      </div>
 
-      <label for="address">Address</label>
-      <textarea id="address" name="address" required></textarea>
+      <div class="unit xs-1 s-1 m-1 l-1-2 push">
+        <label for="email">Email</label>
+        <input id="email" name="email" required>
+      </div>
 
+      <div class="unit xs-1 s-1 m-1 l-1-2 push">
+        <label for="fitness">Physical fitness</label>
+        <select id="fitness" name="fitness">
+          <option>Super-human</option>
+          <option>Fit as a fiddle</option>
+          <option>Not terribly strong</option>
+          <option>A little couch-potato-y</option>
+        </select>
+      </div>
+
+      <div class="unit xs-1 s-1 m-1 l-1 push">
+        <label for="address">Address</label>
+        <textarea id="address" name="address" required></textarea>
+      </div>
+
+    </fieldset>
+    <fieldset>
+      <legend>Mission statement</legend>
+
+      <div>
+        <label for="details">Why do you want to go to Mars?</label>
+        <textarea id="details" name="message" required></textarea>
+      </div>
+    </fieldset>
+
+    <div>
+      <button class="btn">Register for the trip!</button>
+    </div>
+
+    </form>
+
+</section>
 </body>
 </html>
