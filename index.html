@@ -8,67 +8,73 @@
   <link href="css/grid.css" rel="stylesheet">
   <link href="css/type.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
 
 </head>
-<body>
+<body class="gutter">
 
-<section class="island push">
-    <h1>Want to go to Mars?</h1>
-    <hr>
-    <p>We're looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
+  <div class="bg">
 
-    <fieldset>
-      <legend>Personal details</legend>
+    <h1 class="pad-t-2 not-bold">Want to go to Mars?</h1>
+    <p class="mega">We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
 
-    <form class="grid push-0 " metthod="POST" action="https://formspree.io/tchi0007@algonquinlive.com">
+    <form method="POST" action="https://formspree.io/tchi0007@algonquinlive.com">
+      <fieldset>
+        <legend class="peta not-bold italic">Personal details</legend>
 
-      <div class="unit xs-1 s-1 m-1 l-1-2 push">
-        <label for="name">Name</label>
-        <input for="name" name="firstname" required>
-      </div>
+        <div class="grid">
 
-      <div class="unit xs-1 s-1 m-1 l-1-2 push">
-        <label for="age">Age</label>
-        <input type="number" id="age" required>
-      </div>
+          <div class="unit xs-1 s-1 m-1 l-1-2 island-1-2">
+            <label for="name">Name</label>
+            <input id="name" name="firstname" required>
+          </div>
 
-      <div class="unit xs-1 s-1 m-1 l-1-2 push">
-        <label for="email">Email</label>
-        <input id="email" name="email" required>
-      </div>
+          <div class="unit xs-1 s-1 m-1 l-1-2 island-1-2">
+            <label for="age">Age</label>
+            <input type="number" id="age" required>
+          </div>
 
-      <div class="unit xs-1 s-1 m-1 l-1-2 push">
-        <label for="fitness">Physical fitness</label>
-        <select id="fitness" name="fitness">
-          <option>Super-human</option>
-          <option>Fit as a fiddle</option>
-          <option>Not terribly strong</option>
-          <option>A little couch-potato-y</option>
-        </select>
-      </div>
+          <div class="unit xs-1 s-1 m-1 l-1-2 island-1-2">
+            <label for="email">Email</label>
+            <input id="email" name="email" required>
+          </div>
 
-      <div class="unit xs-1 s-1 m-1 l-1 push">
-        <label for="address">Address</label>
-        <textarea id="address" name="address" required></textarea>
-      </div>
+          <div class="unit xs-1 s-1 m-1 l-1-2 island-1-2">
+            <label for="fitness">Physical fitness</label>
+            <select id="fitness" name="fitness">
+              <option>Super-human</option>
+              <option>Fit as a fiddle</option>
+              <option>Not terribly strong</option>
+              <option>A little couch-potato-y</option>
+            </select>
+          </div>
 
-    </fieldset>
-    <fieldset>
-      <legend>Mission statement</legend>
+        </div>
 
-      <div>
-        <label for="details">Why do you want to go to Mars?</label>
-        <textarea id="details" name="message" required></textarea>
-      </div>
-    </fieldset>
+        <div class="unit xs-1 s-1 m-1 l-1 island-1-2">
+          <label for="address">Address</label>
+          <textarea id="address" name="address" required></textarea>
+        </div>
 
-    <div>
-      <button class="btn">Register for the trip!</button>
-    </div>
+      </fieldset>
+
+      <fieldset>
+        <legend class="island-1-2 not-bold peta italic">Mission statement</legend>
+
+        <div class="kilo island-1-2">
+          <label for="details">Why do you want to go to Mars?</label>
+          <textarea id="details" name="message" required></textarea>
+        </div>
+
+        <div class="text-center">
+          <button class="btn" type="submit">Register for the trip!</button>
+        </div>
+      </fieldset>
+
+      <input type="hidden" name="_subject" value="Request to join the mission">
 
     </form>
+  </div>
 
-</section>
 </body>
 </html>
